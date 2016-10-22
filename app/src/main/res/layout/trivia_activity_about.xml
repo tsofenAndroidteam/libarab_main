@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trivia_activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.libarab.michaelg.libarab.Trivia.About">
+
+    <TextView
+        android:text="@string/aboutTrivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:typeface="sans"
+        android:id="@+id/textView22"
+        android:paddingTop="36dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#2f6699"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView22"
+        android:background="#EEEEEE">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView3"
+            android:background="@drawable/ic_about_background_white_48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:text="@string/aboutTrivia2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="36dp"
+            android:id="@+id/textView20"
+            android:typeface="serif"
+            android:textSize="60sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#673ab7"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_about_icon_white_48dp"
+            android:id="@+id/imageView12"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textView20"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_about_icon_white_48dp"
+            android:id="@+id/imageView5"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView20"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

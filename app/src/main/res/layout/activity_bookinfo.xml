@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="@color/boo_cover_icon">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false" >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Item Info"
+            android:id="@+id/textView4"
+            android:singleLine="false"
+            android:textStyle="bold|normal"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/imageView11"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/book_info"
+            android:layout_marginRight="10dp" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:paddingTop="50dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:id="@+id/empty1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="226dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView_title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_bold"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+                        <TextView
+                            android:id="@+id/textView_title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="اعلان من معمل السجائر الوطنية"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_alignBaseline="@+id/textView_title1"
+                            android:layout_toEndOf="@+id/textView_title1"
+                            android:layout_alignParentEnd="true"
+                            android:textAlignment="textEnd"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView_author1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/author_bold"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_below="@+id/textView_title2"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+                        <TextView
+                            android:id="@+id/textView_author2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_alignBaseline="@+id/textView_author1"
+                            android:layout_alignParentEnd="true"
+                            android:textAlignment="textEnd"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView_publisher1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/publisher_bold"
+                            android:textColor="#ffff"
+                            android:textSize="14dp"
+                            android:layout_below="@+id/textView_author2"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+                        <TextView
+                            android:id="@+id/textView_publisher2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" معمل السجائر الوطنية لصاحبها محمد ميقاتي"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_alignBaseline="@id/textView_publisher1"
+                            android:layout_alignParentEnd="true"
+                            android:textAlignment="textEnd"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView_creationdate1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/creationdate_bold"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_below="@+id/textView_publisher2"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+                        <TextView
+                            android:id="@+id/textView_creationdate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1938"
+                            android:textColor="#ffff"
+                            android:textSize="12sp"
+                            android:layout_alignBaseline="@+id/textView_creationdate1"
+                            android:layout_alignParentEnd="true"
+                            android:textAlignment="textEnd"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="308dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView_source1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/source_bold"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_below="@+id/textView_creationdate2"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+                        <TextView
+                            android:id="@+id/textView_source2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ephemera Collection - The National Library of Israel"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:textAlignment="textEnd"
+                            android:layout_below="@+id/textView_creationdate2"
+                            android:layout_toEndOf="@+id/textView_author1"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView_weblink1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/weblink_bold"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:textAlignment="textEnd"
+                            android:layout_below="@+id/textView_source2"
+                            android:layout_alignEnd="@+id/textView_publisher1" />
+
+                        <TextView
+                            android:id="@+id/textView_weblink2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="http://primo.nli.org.il/primo_library/"
+                            android:textColor="#ffff"
+                            android:textSize="12dp"
+                            android:layout_alignBaseline="@id/textView_weblink1"
+                            android:layout_alignParentEnd="true"
+                            android:textAlignment="textEnd"
+
+                            android:layout_below="@+id/textView_source2"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:id="@+id/empty2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <string name="prompt_email">البريد الإلكتروني</string>
+    <string name="prompt_password">كلمه السر</string>
+    <string name="action_sign_in">تسجيل الدخول</string>
+    <string name="action_continue_as_a_guest">ادخل كزائر</string>
+    <string name="have_account">ليس لديك حساب؟</string>
+    <string name="action_sign_up_short">سجل</string>
+    <string name="text_sign_up2"><u>سجل.</u></string>
+    <string name="action_sign_in_short">تسجيل الدخول</string>
+    <string name="error_invalid_email">البريد الإلكتروني غير صالحة</string>
+    <string name="error_invalid_password">كلمة المرور قصيرة</string>
+    <string name="error_incorrect_password">كلمة المرور غير صحيحة</string>
+    <string name="error_field_required">هذه الخانة الزاميه</string>
+    <string name="prompt_firstname">الاسم الشخصي</string>
+    <string name="prompt_lastname">اسم العائلة</string>
+    <string name="aboutTrivia">هذه اللعبه تتضمن نموذج يحوي  5 اسئله, حيث يستطيع المستخدم اضافه نموذج جديد او حل نموذج قائم, ولكل جواب صحيح يحصل المستخدم على 3 نقاط تضاف في نهايه اللعبه للمجموع الكلي للمستخدم</string>
+    <string name="aboutTrivia2">تعليمات</string>
+    <string name="about_details">تحتوي المجموعة على آلاف الكتب، ومجموعة متنوعة من الصحف في وقت مبكر من القرن ال 20، وحوالي 200 مجلة والصحف باللغة العربية والفارسية والتركية نشرت اليوم. وبالإضافة إلى ذلك، هناك مجموعة غنية من 2200 مخطوطة باللغة العربية والفارسية.</string>
+    <string name="permission_rationale">محتاج اذن لجهات اتصال لتوفير اكمال بريد إلكتروني.</string>
+    <string name="menu">القائمة</string>
+    <string-array name="Gender_array">
+        <item>جنس</item>
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </string-array>
+    <string-array name="UserType_array">
+        <item>عادي</item>
+        <item>أمين مكتبة</item>
+    </string-array>
+    <string-array name="searcharray">
+        <item>ابحث عن عنوان</item>
+        <item>ابحث عن مؤلف</item>
+    </string-array>
+
+
+    <string name="menu_about">الوصف</string>
+    <string name="action_settings">اعدادات</string>
+    <string name="menu_bibliography">المراجع</string>
+    <string name="menu_favorites">المواد المفضلة</string>
+    <string name="menu_search">بحث</string>
+
+    <string name="menu_settings">اعدادات</string>
+    <string name="menu_trivia">لعبة المعلومات</string>
+    <string name="navigation_drawer_close">اغلاق درج التنقل</string>
+    <string name="navigation_drawer_open">فتح درج التنقل</string>
+    <string name="pref_header_general">عام</string>
+    <string name="pref_header_notifications">اشعارات</string>
+    <string name="pref_ringtone_silent">صامت</string>
+    <string name="pref_title_add_friends_to_messages">اضافة اصدقاء للرسائل</string>
+    <string name="pref_title_display_name">الاسم المعروض</string>
+    <string name="pref_title_new_message_notifications">اشعارات رسالة جديدة</string>
+    <string name="pref_title_ringtone">النغمة</string>
+    <string name="pref_title_social_recommendations">السماح بالتوصيات الاجتماعية</string>
+    <string name="pref_title_sync_frequency">تردد التزامن</string>
+    <string name="pref_title_system_sync_settings">اعدادات تزامن النظام</string>
+    <string name="pref_title_vibrate">اهتزاز</string>
+    <string name="profile_age">العمر</string>
+    <string name="profile_first_name">الاسم الاول</string>
+    <string name="profile_game_score">نتيجة اللعبة</string>
+    <string name="profile_gender">الجنس</string>
+    <string name="profile_last_name">الاسم الاخير</string>
+    <string name="profile_user_name">اسم المستخدم</string>
+    <string name="title_activity_settings">اعدادات</string>
+    <string name="pref_description_social_recommendations">توصيات للاشخاص للتواصل[...]</string>
+    <string name="pref_header_data_sync"></string>
+    <string name="search_author">مؤلف:</string>
+    <string name="search_choose">اختار:</string>
+    <string name="search_creation_date">تاريخ الانشاء:</string>
+    <string name="search_enter_title">ادخل عنوان الكتاب:</string>
+    <string name="search_publisher">الناشر:</string>
+    <string name="search_title">عنوان:</string>
+    <string name="search_to_year">لسنه:</string>
+    <string name="search_enter_from_year">ادخل مجال السنوات:</string>
+    <string name="search_enter_to_year">ادخل مجال السنوات:</string>
+    <string name="search_from_year">من سنه:</string>
+    <string name="search_sheet">صحيفه</string>
+    <string name="search_book">كتاب</string>
+    <string name="sheet_title">عنوان:</string>
+    <string name="no_pages_error">لا توجد صفحات</string>
+    <string name="title_bold">عنوان</string>
+    <string name="source_bold">مصدر</string>
+    <string name="weblink_bold">رابط موقع</string>
+    <string name="settings_lang">لغة</string>
+    <string name="settings_chose_lang">اضغط لاختيار اللغة</string>
+    <string name="publisher_bold">الناشر</string>
+    <string name="menu_save">حفظ</string>
+    <string name="author_bold">مؤلف</string>
+    <string name="creationdate_bold">تاريخ الإنشاء</string>
+    <string name="enter_page">ادخل رقم صفحه</string>
+    <string name="jump_to_page">نقل لصفحه</string>
+    <string name="loading_wait">جاري التحميل الرجاء الانتظار</string>
+    <string name="connecting_server">الاتصال بالخادم</string>
+    <string name="search_map">خريطه</string>
+    <string name="l_wait">جاري التحميل الرجاء الانتظار</string>
+    <string name="login_to_access">سجّل للدخول!</string>
+    <string name="free_txt">نص حر :</string>
+    <string name="dark_background">خلفية مظلمة</string>
+    <string name="q_main_background">هل الخلفية الرئيسية لون قاتم؟</string>
+    <string name="color">لون</string>
+    <string name="general">عام</string>
+    <string name="listView_title">نتائج البحث</string>
+    <string name="to_be_done">أن يتم</string>
+    <string name="search_enter_author">أدخل اسم المؤلف:</string>
+    <string name="no_results_found">لا توجد نتائج</string>
+
+</resources>

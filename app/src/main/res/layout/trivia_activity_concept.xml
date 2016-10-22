@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:paddingTop="32dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:textSize="18dp"
+        android:layout_marginTop="45dp"
+        android:textColor="#ffffff"
+        android:id="@+id/btnNext"
+        android:background="@drawable/trivia_btnyel"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trivia_background_shape"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNumberOfQuestions"
+            android:text="ICT questions"
+            android:background="@color/colorTrivia"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tvQuestion"
+            android:layout_below="@+id/tvNumberOfQuestions"
+            android:text="ICT questions"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:paddingBottom="6dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvQuestion"
+            android:paddingTop="10dp"
+            android:weightSum="100"
+            android:background="@drawable/trivia_background_shape">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="RadioButton"
+                android:checked="false"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFEBEE"
+                android:layout_weight="25"
+                />
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="RadioButton"
+                android:checked="false"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFEBEE"
+                android:layout_weight="25"
+                />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="RadioButton"
+                android:checked="false"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFEBEE"
+                android:layout_weight="25"
+                />
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="RadioButton"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="25"
+                android:background="#FFEBEE"
+
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

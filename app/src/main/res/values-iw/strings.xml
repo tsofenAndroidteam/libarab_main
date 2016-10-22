@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">דואר אלקטרוני</string>
+    <string name="prompt_password">סיסמה</string>
+    <string name="action_sign_in">היכנס</string>
+    <string name="action_continue_as_a_guest">המשך כאורח</string>
+    <string name="have_account">אין לך חשבון?</string>
+    <string name="action_sign_up_short">הירשם</string>
+    <string name="text_sign_up2"><u>הירשם.</u></string>
+    <string name="action_sign_in_short">היכנס</string>
+    <string name="error_invalid_email">כתובת הדואר האלקטרוני אינה חוקית</string>
+    <string name="error_invalid_password">הסיסמה קצרה מדי</string>
+    <string name="error_incorrect_password">הסיסמה שגויה</string>
+    <string name="error_field_required">שדה חובה</string>
+    <string name="prompt_firstname">שם פרטי</string>
+    <string name="prompt_lastname">שם משפחה</string>
+    <string name="aboutTrivia2">אודות</string>
+    <string name="aboutTrivia">משחק טריוויה הוא משחק שאלות ותשובות, המשתמש יכול להוסיף שאלות לפריט מסוים וגם אפשר לשחק משחק של 5 שאלות עם 4 תשובות שאחת מהן נכונה וכל תשובה נכונה מוסיפה 3 נקודות לסכום הכללי של המשתמש, הנקודות יתוספו בסוף המחשק ותוצג הודעה מתאימה. </string>
+    <string name="about_details">האוסף מכיל אלפי ספרים, מגוון רחב של עיתונים מראשית המאה ה-20 וכ-200 כתבי עת ועיתונים בשפה הערבית, הפרסית והתורכית היוצאים לאור בימינו. בנוסף, קיים אוסף עשיר של כ-2,200 כתבי יד בערבית ובפרסית.</string>
+    <string name="permission_rationale">הרשאות אנשי קשר נדרשות לשם השלמת פרטי אימייל.</string>
+    <string name="menu">תפריט</string>
+    <string name="settings_chose_lang">לחץ לשינוי שפה</string>
+    <string name="settings_lang">שפה</string>
+    <string-array name="Gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="UserType_array">
+        <item>Regular</item>
+        <item>Curator</item>
+    </string-array>
+    <string-array name="searcharray">
+        <item>חפש לפי כותרת</item>
+        <item>חפש לפי סופר</item>
+    </string-array>
+    <string name="menu_about">אודות</string>
+    <string name="menu_bibliography">ביבליוגרפיה</string>
+    <string name="menu_favorites">מועדפים</string>
+    <string name="menu_search">חיפוש</string>
+    <string name="menu_settings">הגדרות</string>
+    <string name="menu_trivia">טריוויה</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="navigation_drawer_close">סגור את חלונית הניווט</string>
+    <string name="navigation_drawer_open">פתח את חלונית הניווט</string>
+    <string name="pref_description_social_recommendations">המלצות לאנשים לפנות[...]</string>
+    <string name="pref_header_general">כללי</string>
+    <string name="pref_header_notifications">הודעות</string>
+    <string name="pref_ringtone_silent">שקט</string>
+    <string name="pref_title_add_friends_to_messages">הוספת חברים להודעה</string>
+    <string name="pref_title_display_name">השם המוצג</string>
+    <string name="pref_title_new_message_notifications">"הודעה חדשה "</string>
+    <string name="pref_title_ringtone">צלצול</string>
+    <string name="pref_title_social_recommendations">לאפשר המלצות חברתיות</string>
+    <string name="pref_title_sync_frequency">תדירות סינכרון</string>
+    <string name="pref_title_system_sync_settings">הגדרות הסינכרון למערכת</string>
+    <string name="pref_title_vibrate">רוטט</string>
+    <string name="profile_age">הגיל</string>
+    <string name="profile_first_name">שם האישי</string>
+    <string name="profile_game_score">תוצאת המשחק</string>
+    <string name="profile_gender">מין</string>
+    <string name="profile_last_name">שם המשפחה</string>
+    <string name="profile_user_name">שם משתמש</string>
+    <string name="title_activity_settings">הגדרות</string>
+    <string name="search_author">סופר:</string>
+    <string name="search_choose">בחר</string>
+    <string name="search_creation_date">תאריך יצירה:</string>
+    <string name="search_enter_from_year">הכנס תחילת טווח שנים</string>
+    <string name="search_enter_title">הכנס כותרת ספר:</string>
+    <string name="search_enter_to_year">הכנס טווח סיום שנים</string>
+    <string name="search_from_year">משנה:</string>
+    <string name="search_publisher">מפרסם:</string>
+    <string name="search_title">כותרת:</string>
+    <string name="search_to_year">עד שנה:</string>
+    <string name="search_sheet">גליון</string>
+    <string name="search_book">ספר</string>
+    <string name="sheet_title">כותרת:</string>
+    <string name="no_pages_error">אין דפים</string>
+    <string name="title_bold">כותרת</string>
+    <string name="source_bold">מָקוֹר</string>
+    <string name="weblink_bold">קישור אינטרנט</string>
+    <string name="publisher_bold">מוֹצִיא לָאוֹר</string>
+    <string name="menu_save">שמירה</string>
+    <string name="author_bold">מְחַבֵּר</string>
+    <string name="creationdate_bold">תאריך היווצרות</string>
+    <string name="enter_page">הכנס מספר דף</string>
+    <string name="jump_to_page">קפיצה לדף</string>
+    <string name="loading_wait">בטעינה אנא המתן</string>
+    <string name="connecting_server">מתחבר לשרת</string>
+    <string name="search_map">מפה</string>
+    <string name="l_wait">בטעינה אנא המתן</string>
+    <string name="login_to_access">התחבר כדי לגשת לתכונה זו!</string>
+    <string name="free_txt">חיפוש חופשי :</string>
+    <string name="dark_background">רקע כהה</string>
+    <string name="q_main_background">האם הרקע הראשי כהה?</string>
+    <string name="color">צבע</string>
+    <string name="general">כללי</string>
+    <string name="listView_title">תוצאות חיפוש</string>
+    <string name="to_be_done">יעבוד בהמשך</string>
+    <string name="search_enter_author">הכנס שם מחבר:</string>
+    <string name="no_results_found">מצטערים, לא נמצאו תוצאות</string>
+</resources>

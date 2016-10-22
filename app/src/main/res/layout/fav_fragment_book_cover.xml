@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="#c9c9c9">
+
+    <!-- background -->
+    <ImageView
+        android:id="@+id/book_cover_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- Book cover -->
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="160dp"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop" />
+
+    <!-- score -->
+
+</RelativeLayout>

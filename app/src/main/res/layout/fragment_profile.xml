@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="269dp"
+        android:layout_gravity="center"
+        android:layoutAnimation="@anim/layoutanimationdown"
+        android:layout_weight="0.36">
+
+        <!---User Circular Image -->
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/img_circular_profile_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/userprofilefinal"
+            android:layout_centerInParent="true" />
+
+        <!---User Background Image -->
+        <ImageView
+
+            android:id="@+id/img_background_profile_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:scaleType="matrix"
+            android:gravity="center|center_vertical"
+            android:layout_gravity="center|center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/img_circular_profile_user"
+            android:background="@drawable/userprofilefinal"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+
+        <!---basic user data: name and email (temporary data)-->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_user_name"
+            android:background="@drawable/textview_tag_bg"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/img_circular_profile_user"
+            android:padding="@dimen/activity_vertical_eight"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_tag_bg"
+            android:text="@string/profile_user_email"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_below="@+id/user_name"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/activity_vertical_eight"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp" />
+
+    </RelativeLayout>
+    <!---More detailed user info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layoutAnimation="@anim/layoutanimation"
+        android:paddingLeft="50dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/user_first_name"
+                android:layout_width="wrap_content"
+                android:background="@drawable/textview_tag_bg"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_first_name" />
+
+            <TextView
+                android:id="@+id/tv_userprofile_f_name"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Michael" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/user_last_name"
+                android:layout_width="wrap_content"
+                android:background="@drawable/textview_tag_bg"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_last_name" />
+
+            <TextView
+                android:id="@+id/tv_userprofile_l_name"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="Gonic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/user_age"
+                android:layout_width="wrap_content"
+                android:background="@drawable/textview_tag_bg"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_age" />
+
+            <TextView
+                android:id="@+id/tv_userprofile_age"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_gender"
+                android:background="@drawable/textview_tag_bg"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_gender" />
+
+            <TextView
+                android:id="@+id/tv_userprofile_gender"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="male" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/user_game_score"
+                android:background="@drawable/textview_tag_bg"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_game_score"
+                 />
+
+            <TextView
+                android:id="@+id/tv_userprofile_score"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100"
+                />
+        </LinearLayout>
+
+        <!---temporary data -->
+    </LinearLayout>
+
+</LinearLayout>

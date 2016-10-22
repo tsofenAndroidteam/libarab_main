@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/custom_toast_container"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="100"
+    android:background="#FAFAFA"
+    tools:context="com.libarab.michaelg.libarab.Trivia.AddQuestion" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:layout_weight="15"
+        android:text="New question To Item"
+        android:textAllCaps="true"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:textStyle="bold"
+        android:textColor="#FF6D00"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:hint="Add question"
+        android:textColorHint="#2f6699"
+        android:textStyle="bold"
+        android:id="@+id/question_text"
+        android:textSize="20sp"
+        android:paddingLeft="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:hint="1- Correct answer"
+        android:id="@+id/correct_answer"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColorHint="#2f6699"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:hint="2- Incorrect answer"
+        android:id="@+id/uncorrect_answer1"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColorHint="#2f6699"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:hint="3- Incorrect answer"
+        android:id="@+id/uncorrect_answer2"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColorHint="#2f6699"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:hint="4- Incorrect answer"
+        android:id="@+id/uncorrect_answer3"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColorHint="#2f6699"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imageButton"
+            android:onClick="Add"
+            android:background="@drawable/ic_add_ques_white_48dp"
+            android:backgroundTint="#FFAB00"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
