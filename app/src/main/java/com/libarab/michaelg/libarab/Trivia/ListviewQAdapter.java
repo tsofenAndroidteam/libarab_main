@@ -49,7 +49,7 @@ public class ListviewQAdapter extends ArrayAdapter<ItemsQ> {
         } else {
             holder = (com.libarab.michaelg.libarab.Trivia.ListviewQAdapter.ViewHolder) v.getTag();
         }
-        holder.title.setText(bookList.get(position).getAuthor());
+        holder.title.setText(bookList.get(position).getItemName());
         //holder.author.setText(bookList.get(position).getAuthor());
 
         holder.creationdate.setText( bookList.get(position).getcreationDate());

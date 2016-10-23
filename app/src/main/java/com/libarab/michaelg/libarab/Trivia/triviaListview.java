@@ -105,8 +105,8 @@ public class triviaListview extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 //Toast.makeText(getApplicationContext(), items.get(position).getAuthor(), Toast.LENGTH_LONG).show();
                 Intent intent1=new Intent(getApplicationContext(),StartQuiz.class);
-                intent1.putExtra("auther",items.get(position).getAuthor());
-                intent1.putExtra("itemName",items.get(position).getItemName());
+                intent1.putExtra("auther",items.get(position).getItemName());
+                intent1.putExtra("itemName",items.get(position).getrealAuther());
                 intent1.putExtra("userId",myUser);
                 // Remember that variable (user) is the private variable above that is sent by the search
 
@@ -217,18 +217,19 @@ public class triviaListview extends AppCompatActivity {
 
 
                         String auther1 = itemQuize.getString("author ");
-                        String itemName1 = itemQuize.getString("item id");
-                       /* String creationDate=itemQuize.getString("Creation Date");
+                        String itemName1 = itemQuize.getString("name ");
+                        String creationDate=itemQuize.getString("Creation Date");
                         String imgURL=itemQuize.getString("Url Image");
-                        String publisher=itemQuize.getString("publisher");*/
+                        String publisher=itemQuize.getString("publisher");
+                        String itemId=itemQuize.getString("item id");
 
                         ItemsQ item=new ItemsQ();
                         item.setAuthor(auther1);
                         item.setItemName(itemName1);
-                        item.setcreationDate("creationDate");
-                        item.seturlImg("imgURL");
-                        item.setpublisher("publisher");
-                        item.setrealAuther(auther1);
+                        item.setcreationDate(creationDate);
+                        item.seturlImg(imgURL);
+                        item.setpublisher(publisher);
+                        item.setrealAuther(itemId);
 
 
 
