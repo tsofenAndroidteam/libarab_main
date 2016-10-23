@@ -322,8 +322,8 @@ public class ViewPagerActivity extends AppCompatActivity {
         addq.putExtra("itemName", book.getTitle());
 
         addq.putExtra("creationdate" ,book.getCreationdate());
-        addq.putExtra("webLink"      ,book.getWeblink());
-        addq.putExtra("publisher"    ,book.getPublisher());
+        addq.putExtra("webLink"      ,book.getThumbnail());
+        addq.putExtra("publisher"    ,book.getSource());
         startActivity(addq);
 
     }

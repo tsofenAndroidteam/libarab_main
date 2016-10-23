@@ -104,6 +104,13 @@ public class ResultActivity extends AppCompatActivity {
         //Id1 = myuser.getuserid();
 
 
+
+        //Toast.makeText(ResultActivity.this, "Score:"+points  , Toast.LENGTH_SHORT).show();
+
+        FinishTask fin= new FinishTask(Id1 , Sc1);
+        fin.execute((Void) null);
+
+
         Button btnDone=(Button)findViewById(R.id.btnDone);
         btnDone.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,25 +148,6 @@ public class ResultActivity extends AppCompatActivity {
             }
         });*/
 
-        Button btnScore=(Button)findViewById(R.id.btnDone);
-        btnScore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), triviaListview.class);
-                //  Intent intent = new Intent(getApplicationContext(), Finish.class);
-                intent.putExtra("userId",myUser);
-
-                startActivity(intent);
-                //Toast.makeText(ResultActivity.this, "Score:"+points  , Toast.LENGTH_SHORT).show();
-
-                FinishTask fin= new FinishTask(Id1 , Sc1);
-                fin.execute((Void) null);
-
-                //Toast.makeText(ResultActivity.this, "Score: " + Sc1 + "userName:" + Id1  , Toast.LENGTH_SHORT).show();
-                //  Toast.makeText(ResultActivity.this, "DDDDDDDDD"  + fin.UserId + " / " + fin.Score, Toast.LENGTH_SHORT).show();
-            }
-        });
 
 
    /*    Button bt= (Button) findViewById(R.id.btnScore);
@@ -239,7 +227,7 @@ public class ResultActivity extends AppCompatActivity {
                 Uri builtUri = Uri.parse(FORECAST_BASE_URL).buildUpon()
                         .appendQueryParameter("userId", userId)
 
-                        .appendQueryParameter("score", score1+"")
+                        .appendQueryParameter("score", score+"")
 
                         .build();
 
@@ -320,7 +308,7 @@ public class ResultActivity extends AppCompatActivity {
 
                 if (answer.equals("true")) {  //case the user does'nt exist
 
-                    finish();
+
                     //Toast.makeText(ResultActivity.this, "Thank you!", Toast.LENGTH_LONG).show();
                     // Intent intent = new Intent(getApplicationContext(), Progress.class);
                     ///startActivity(intent);

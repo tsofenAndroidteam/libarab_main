@@ -1,6 +1,7 @@
 package com.libarab.michaelg.libarab.Trivia;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.libarab.michaelg.libarab.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -49,6 +51,18 @@ public class ListviewQAdapter extends ArrayAdapter<ItemsQ> {
         } else {
             holder = (com.libarab.michaelg.libarab.Trivia.ListviewQAdapter.ViewHolder) v.getTag();
         }
+        String mytest ="http://icons.iconarchive.com/icons/icons8/ios7/256/Files-Jpg-icon.png";
+
+
+
+       /*holder.imageview.setVisibility(View.VISIBLE);
+        Picasso
+                .with(this.getContext())
+                .load(bookList.get(position).geturlImg())
+                .fit()
+                .into(holder.imageview);
+        String test = bookList.get(position).geturlImg();*/
+
         holder.title.setText(bookList.get(position).getItemName());
         //holder.author.setText(bookList.get(position).getAuthor());
 

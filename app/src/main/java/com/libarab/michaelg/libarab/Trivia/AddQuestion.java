@@ -210,9 +210,9 @@ public class AddQuestion extends AppCompatActivity {
                         .appendQueryParameter(ITEM_ID, itemid)
                         .appendQueryParameter(AUTHER, thisAuther)
                         .appendQueryParameter(ITEM_NAME, itemname)
-                        .appendQueryParameter("publisher",creationdate1)
-                        .appendQueryParameter("creationDate", webLink)
-                        .appendQueryParameter("urlImage", publisher)
+                        .appendQueryParameter("publisher",publisher)
+                        .appendQueryParameter("creationDate",creationdate1 )
+                        .appendQueryParameter("urlImage",webLink )
                         .build();
 
                 URL url = new URL(builtUri.toString());
