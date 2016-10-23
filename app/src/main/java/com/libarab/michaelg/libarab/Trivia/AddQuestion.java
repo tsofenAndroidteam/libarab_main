@@ -37,6 +37,10 @@ public class AddQuestion extends AppCompatActivity {
     String thisAuther;
     String thisItemName;
 
+    String creationdate1;
+    String webLink;
+    String publisher;
+
     private AddQTask addQueTask = null;
 
     @Override
@@ -74,6 +78,10 @@ public class AddQuestion extends AppCompatActivity {
         thisItemid = intent.getStringExtra("itemId");
         thisAuther = intent.getStringExtra("author");
         thisItemName = intent.getStringExtra("itemName");
+        creationdate1 = intent.getStringExtra("creationdate");
+        webLink = intent.getStringExtra("webLink");
+        publisher = intent.getStringExtra("publisher");
+
         //Toast.makeText(AddQuestion.this,  thisItemName, Toast.LENGTH_LONG).show();
 
         addQuestionButton.setOnClickListener(new OnClickListener() {
@@ -202,6 +210,9 @@ public class AddQuestion extends AppCompatActivity {
                         .appendQueryParameter(ITEM_ID, itemid)
                         .appendQueryParameter(AUTHER, itemname)
                         .appendQueryParameter(ITEM_NAME, itemid)
+                        .appendQueryParameter("publisher",creationdate1)
+                        .appendQueryParameter("creationDate", webLink)
+                        .appendQueryParameter("urlImage", publisher)
                         .build();
 
                 URL url = new URL(builtUri.toString());

@@ -206,7 +206,7 @@ public class triviaListview extends AppCompatActivity {
             //else Toast.makeText(getApplicationContext(),"done", Toast.LENGTH_LONG).show();
 
             else {
-                //Toast.makeText(getApplicationContext(),itemsQ.toString(), Toast.LENGTH_LONG).show();
+
 
                 quizes = null;
                 try {
@@ -215,12 +215,22 @@ public class triviaListview extends AppCompatActivity {
                     for(int i=0;i<itemsRelateQ.length();i++){
                         JSONObject itemQuize = itemsRelateQ.getJSONObject(i);
 
+
                         String auther1 = itemQuize.getString("author ");
-                        String itemName1 = itemQuize.getString("name ");
+                        String itemName1 = itemQuize.getString("item id");
+                       /* String creationDate=itemQuize.getString("Creation Date");
+                        String imgURL=itemQuize.getString("Url Image");
+                        String publisher=itemQuize.getString("publisher");*/
 
                         ItemsQ item=new ItemsQ();
                         item.setAuthor(auther1);
                         item.setItemName(itemName1);
+                        item.setcreationDate("creationDate");
+                        item.seturlImg("imgURL");
+                        item.setpublisher("publisher");
+                        item.setrealAuther(auther1);
+
+
 
                         items.add(item);
                     }

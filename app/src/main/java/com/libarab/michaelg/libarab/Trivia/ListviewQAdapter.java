@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.libarab.michaelg.libarab.R;
@@ -39,12 +40,21 @@ public class ListviewQAdapter extends ArrayAdapter<ItemsQ> {
             v = vi.inflate(Resource, null);
             holder.title = (TextView) v.findViewById(R.id.textView2);
             holder.author = (TextView) v.findViewById(R.id.tv_title);
+
+            holder.creationdate = (TextView) v.findViewById(R.id.tv_creationdate);
+            holder.publisher = (TextView) v.findViewById(R.id.tv_publisher);
+            holder.author = (TextView) v.findViewById(R.id.tv_author);
+            holder.imageview =(ImageView) v.findViewById(R.id.book_item_image);
             v.setTag(holder);
         } else {
             holder = (com.libarab.michaelg.libarab.Trivia.ListviewQAdapter.ViewHolder) v.getTag();
         }
         holder.title.setText(bookList.get(position).getAuthor());
         //holder.author.setText(bookList.get(position).getAuthor());
+
+        holder.creationdate.setText( bookList.get(position).getcreationDate());
+        holder.publisher.setText(bookList.get(position).getpublisher());
+        holder.author.setText(bookList.get(position).getAuthor());
         return v;
 
     }
@@ -53,6 +63,11 @@ public class ListviewQAdapter extends ArrayAdapter<ItemsQ> {
         public TextView title;
         //public TextView tvDescription;
         public TextView author;
+
+        public TextView creationdate;
+        public TextView publisher;
+        public ImageView imageview;
+
 
     }
 
