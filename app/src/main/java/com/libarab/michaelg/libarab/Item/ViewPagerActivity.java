@@ -186,13 +186,17 @@ public class ViewPagerActivity extends AppCompatActivity {
                                         .appendQueryParameter("pagenum", (vpGallery.getCurrentItem()+1)+"")
                                         .appendQueryParameter("desc", "No Description").build();
 
+                                String tmp = builtUri.toString();
+                                Uri builtUri2;
                                         ///////////// THIS IS WHAT I COMMENTED (EMIL)
                                         if(book.getTitle().length()>30) {
-                                            builtUri.buildUpon().appendQueryParameter("title", book.getTitle().substring(0, 30));
+                                            builtUri2 = Uri.parse(tmp).buildUpon().appendQueryParameter("title", book.getTitle().substring(0, 30)).build();
                                         }else{
-                                            builtUri.buildUpon().appendQueryParameter("title", book.getTitle()).build();
+                                            builtUri2 = Uri.parse(tmp).buildUpon().appendQueryParameter("title", book.getTitle()).build();
                                         }
-                                        builtUri.buildUpon()
+                                String tmp2 = builtUri2.toString();
+                                Uri builtUri3 = Uri.parse(tmp2)
+                                        .buildUpon()
                                         .appendQueryParameter("author", book.getAuthor())
                                         .appendQueryParameter("publisher", book.getPublisher())
                                         .appendQueryParameter("creationDate", book.getCreationdate())
@@ -202,11 +206,11 @@ public class ViewPagerActivity extends AppCompatActivity {
                                         //.appendQueryParameter("source", book.getSource())
                                         //.appendQueryParameter("other", book.getOther())
                                         .build();
-                                Log.v(TAG + "ADDFAVURL", builtUri.toString());
+                                Log.v(TAG + "ADDFAVURL", builtUri3.toString());
                                 if(!(favoritePages.contains(vpGallery.getCurrentItem()+1)))
                                 favoritePages.add(vpGallery.getCurrentItem()+1);
                                 Collections.sort(favoritePages);
-                                FavoritesTask fav = new FavoritesTask(builtUri.toString());
+                                FavoritesTask fav = new FavoritesTask(builtUri3.toString());
                                 fav.execute((Void) null);
 
                             } else {
@@ -293,9 +297,6 @@ public class ViewPagerActivity extends AppCompatActivity {
         }
         //BOOK OR MAP
         else {
-            if(type.equals("map")){
-                lovebutton.setVisibility(View.GONE);
-            }
             book = new Book();
             mAuthTask = new ViewItemTask(ID, userId);
             mAuthTask.execute((Void) null);
