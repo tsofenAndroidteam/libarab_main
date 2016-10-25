@@ -263,6 +263,7 @@ public class ViewPagerActivity extends AppCompatActivity {
 
             //add sheet page linke
             pagesStr.add(weblink);
+            lovebutton.setVisibility(View.GONE);
            // vpGallery.setVisibility(View.GONE);
            // TextView textView9=(TextView) findViewById(R.id.textView13);
             //textView9.setVisibility(View.GONE);
@@ -292,6 +293,9 @@ public class ViewPagerActivity extends AppCompatActivity {
         }
         //BOOK OR MAP
         else {
+            if(type.equals("map")){
+                lovebutton.setVisibility(View.GONE);
+            }
             book = new Book();
             mAuthTask = new ViewItemTask(ID, userId);
             mAuthTask.execute((Void) null);
