@@ -42,8 +42,8 @@ public class FavoriteFragmentnew extends Fragment {
 
         mTabHost.addTab(mTabHost.newTabSpec("fragmentb").setIndicator("My Books"),
                 BookGridFragment.class, null);
-        mTabHost.addTab(mTabHost.newTabSpec("fragmentc").setIndicator("My Sheets"),
-                BookGridFragment.class, null);
+        /*mTabHost.addTab(mTabHost.newTabSpec("fragmentc").setIndicator("My Sheets"),
+                BookGridFragment.class, null);*/
         // mTabHost.addTab(mTabHost.newTabSpec("fragmentd").setIndicator("Map"),
         //       SearchMapFragment.class, null);
 
